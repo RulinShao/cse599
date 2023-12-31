@@ -1,0 +1,423 @@
+---
+title: Home
+layout: home
+nav_order: 1
+---
+
+<style type="text/css">
+  th {
+    font-size: 1rem !important;
+  }
+  td {
+    vertical-align: top;
+    font-size: 1rem !important;
+  }
+  .staffer {
+    display: flex;
+    margin: 1rem;
+  }
+  .staffer p, .staffer .staffer-name {
+    margin: 0.25rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .staffer .staffer-image {
+    border-radius: 50%;
+    height: 100px;
+    margin-right: 1rem;
+  }
+  .staffer .staffer-meta {
+    color: #959396 !important;
+    margin-top: 0.1rem !important;
+  }
+</style>
+
+<h1>CSE599J: Data-centric Machine Learning</h1>
+<h3>
+Winter 2023-2024<br/>
+Wednesdays and Fridays, 3pm to 4:20pm<br/>
+CSE2 371<br/>
+</h3>
+<br/>
+
+<div class="staffer"> 
+  <img class="staffer-image" src="/images/pw.jpg" alt="">
+  <div>
+    <h3 class="staffer-name"> 
+      <a href="https://koh.pw/">Pang Wei Koh</a>      
+    </h3>
+    <p class="staffer-meta">Instructor</p>
+    <p class="staffer-meta">pangwei@cs.washington.edu</p>    
+  </div>
+</div>
+
+<div class="staffer"> 
+  <img class="staffer-image" src="/images/akari.jpg" alt="">    
+  <div>    
+    <h3 class="staffer-name"> 
+      <a href="https://akariasai.github.io/">Akari Asai</a>
+    </h3>
+    <p class="staffer-meta">Teaching assistant</p>
+    <p class="staffer-meta">akari@cs.washington.edu</p>    
+  </div>  
+</div>
+
+Office hours by appointment. <br/>
+To contact course staff, please make an Ed post or email both Pang Wei and Akari. <br/>
+We welcome feedback on the course. If you prefer to leave it anonymously, use this form. [TODO]
+
+
+<hr/>
+
+<p>
+  Many advances in machine learning over the past decade have been powered by the increasing availability of larger and more diverse datasets. Where do these datasets come from? What issues are present in these datasets, and how might we deal with them? We will study questions around how we can better use our available data for training, at inference, and for evaluation, as well as ethical, legal, and security issues around data use. The course will be primarily based around paper reading and discussions, with an open-ended course project. 
+</p>
+<p>
+  This is a seminar designed for PhD students. Students are expected to be able to read and understand the assigned papers on their own, and they should be familiar with ML and NLP concepts at the level of having taken advanced undergraduate classes.
+</p>
+
+<h2>Schedule</h2>
+
+Weekly due dates:
+<ul>
+  <li>By Monday 11:59pm: Slides for Wednesday’s papers (presenters only)</li>
+  <li>By Tuesday 11:59pm: Paper reflections (everyone)</li>
+  <li>By Wednesday 11:59pm: Slides for Friday’s papers (presenters only)</li>
+  <li>By Thursday 11:59pm: Paper reflections (everyone)</li>
+</ul>
+
+
+
+<h3>Data for pretraining</h3>
+
+
+<table>
+  <tr>
+    <td>Jan 3 (Wed)</td>
+    <td>
+      <strong>No class</strong>
+    </td>    
+  </tr>
+  <tr>
+    <td>Jan 5 (Fri)</td>
+    <td>
+      <strong>Course overview & dataset construction</strong><br>
+      <ul>
+        <li><a href="#">Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus</a></li>
+        <li><a href="#">DataComp: In search of the next generation of multimodal datasets</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">LAION-5B: An open large-scale dataset for training next generation image-text models</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 10 (Wed)</td>
+    <td>
+      <strong>Scaling laws</strong><br>
+      <ul>
+        <li><a href="#">Training Compute-Optimal Large Language Models</a></li>
+        <li><a href="#">Scaling Data-Constrained Language Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Scaling Laws for Neural Language Models</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 12 (Fri)</td>
+    <td>
+      <strong>Data filtering</strong><br>
+      <ul>
+        <li><a href="#">Deduplicating training data makes language models better</a></li>
+        <li><a href="#">Whose Language Counts as High Quality? Measuring Language Ideologies in Text Data Selection</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">SemDeDup: Data-efficient learning at web-scale through semantic deduplication</a></li>
+        <li><a href="#">Beyond neural scaling laws: beating power law scaling via data pruning</a></li>
+        <li><a href="#">Data Filtering Networks</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 17 (Wed)</td>
+    <td>
+      <strong>Dataset composition</strong><br>
+      <ul>
+        <li><a href="#">A Pretrainer's Guide to Training Data: Measuring the Effects of Data Age, Domain Coverage, Quality, & Toxicity</a></li>
+        <li><a href="#">Scaling Laws of Synthetic Images for Model Training ... for Now</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Is a Caption Worth a Thousand Images? A Controlled Study for Representation Learning</a></li>
+        <li><a href="#">StableRep: Synthetic Images from Text-to-Image Models Make Strong Visual Representation Learners</a></li>
+        <li><a href="#">Quality Not Quantity: On the Interaction between Dataset Design and Robustness of CLIP</a></li>
+        <li><a href="#">Data Determines Distributional Robustness in Contrastive Language-Image Pre-training (CLIP)</a></li>
+        <li><a href="#">Demystifying CLIP data</a></li>
+        <li><a href="#">Improving Multimodal Datasets with Image Captioning</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 19 (Fri)</td>
+    <td>
+      <strong>Biases in datasets</strong><br>
+      <ul>
+        <li><a href="#">From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models</a></li>
+        <li><a href="#">Towards Measuring the Representation of Subjective Global Opinions in Language Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Whose Opinions Do Language Models Reflect?</a></li>
+        <li><a href="#">Can Large Language Models Capture Dissenting Human Voices?</a></li>
+        <li><a href="#">The “Problem” of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<h3>Data for tuning and evaluation</h3>
+
+<table>
+  <tr>
+    <td>Jan 24 (Wed)</td>
+    <td>
+      <strong>Generative evaluation</strong><br>
+      <ul>
+        <li><a href="#">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a></li>
+        <li><a href="#">All That’s ‘Human’ Is Not Gold: Evaluating Human Evaluation of Generated Text</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models</a></li>
+        <li><a href="#">Adaptive Testing of Computer Vision Models</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 26 (Fri)</td>
+    <td>
+      <strong>Data for alignment</strong><br>
+      <ul>
+        <li><a href="#">LIMA: Less Is More for Alignment</a></li>
+        <li><a href="#">The False Promise of Imitating Proprietary LLMs</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback</a></li>
+        <li><a href="#">Self-Instruct: Aligning Language Models with Self-Generated Instructions</a></li>
+        <li><a href="#">Self-Alignment with Instruction Backtranslation</a></li>
+        <li><a href="#">The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning</a></li>
+        <li><a href="#">The Flan Collection: Designing Data and Methods for Effective Instruction Tuning</a></li>
+        <li><a href="#">How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Jan 31 (Wed)</td>
+    <td>
+      <strong>Ambiguity and disagreement</strong><br>
+      <ul>
+        <li><a href="#">We’re Afraid Language Models Aren’t Modeling Ambiguity</a></li>
+        <li><a href="#">Jury Learning: Integrating Dissenting Voices into Machine Learning Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks</a></li>
+        <li><a href="#">Confident Learning: Estimating Uncertainty in Dataset Labels</a></li>
+        <li><a href="#">AmbigQA: Answering Ambiguous Open-domain Questions</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3>Adapting to different data distributions</h3>
+
+<table>
+  <tr>
+    <td>Feb 2 (Fri)</td>
+    <td>
+      <strong>Distribution shifts (project proposal due)</strong><br>
+      <ul>
+        <li><a href="#">WILDS: A benchmark of in-the-wild distribution shifts</a></li>
+        <li><a href="#">A theory of learning from different domains</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Extending the WILDS benchmark for unsupervised adaptation</a></li>
+        <li><a href="#">Accuracy on the Line: On the Strong Correlation Between Out-of-Distribution and In-Distribution Generalization</a></li>
+        <li><a href="#">Out-of-Domain Robustness via Targeted Augmentations</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Feb 7 (Wed)</td>
+    <td>
+      <strong>Reweighting data</strong><br>
+      <ul>
+        <li><a href="#">Improving predictive inference under covariate shift by weighting the log-likelihood function</a></li>
+        <li><a href="#">Distributionally Robust Language Modeling</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Distributionally robust neural networks for group shifts</a></li>
+        <li><a href="#">DoReMi</a></li>
+        <li><a href="#">DSIR</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Feb 9 (Fri)</td>
+    <td>
+      <strong>Domain adaptation</strong><br>
+      <ul>
+        <li><a href="#">Don’t Stop Pretraining: Adapt Language Models to Domains and Tasks</a></li>
+        <li><a href="#">MEDITRON-70B: Scaling Medical Pretraining for Large Language Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Galactica: A Large Language Model for Science</a></li>
+        <li><a href="#">The Impact of Large Language Models on Scientific Discovery: a Preliminary Study using GPT-4</a></li>
+        <li><a href="#">Llemma: An Open Language Model for Mathematics</a></li>
+        <li><a href="#">OpenWebMath: An Open Dataset of High-Quality Mathematical Web Text</a></li>
+        <li><a href="#">Solving Quantitative Reasoning Problems with Language Models</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3>Linking model output to training data</h3>
+
+<table>
+  <tr>
+    <td>Feb 14 (Wed)</td>
+    <td>
+      <strong>Data attribution</strong><br>
+      <ul>
+        <li><a href="#">Studying Large Language Model Generalization with Influence Functions</a></li>
+        <li><a href="#">Simfluence: Modeling the Influence of Individual Training Examples by Simulating Training Runs</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Understanding Black-box Predictions via Influence Functions</a></li>
+        <li><a href="#">TRAK: Attributing Model Behavior at Scale</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Feb 16 (Fri)</td>
+    <td>
+      <strong>Retrieval-based models</strong><br>
+      <ul>
+        <li><a href="#">When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories</a></li>
+        <li><a href="#">Atlas: Few-shot Learning with Retrieval Augmented Language Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Large Language Models Struggle to Learn Long-Tail Knowledge</a></li>
+        <li><a href="#">The Web Is Your Oyster - Knowledge-Intensive NLP against a Very Large Web Corpus</a></li>
+        <li><a href="#">Improving language models by retrieving from trillions of tokens</a></li>
+        <li><a href="#">In-Context Retrieval-Augmented Language Models</a></li>
+        <li><a href="#">Generalization through Memorization: Nearest Neighbor Language Models</a></li>
+        <li><a href="#">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></li>
+        <li><a href="#">Retrieval-Augmented Multimodal Language Modeling</a></li>
+        <li><a href="#">DocPrompting: Generating Code by Retrieving the Docs</a></li>
+        <li><a href="#">Dense X Retrieval: What Retrieval Granularity Should We Use?</a></li>
+        <li><a href="#">In-Context Pretraining: Language Modeling Beyond Document Boundaries</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Feb 21 (Wed)</td>
+    <td>
+      <strong>Memorization</strong><br>
+      <ul>
+        <li><a href="#">Quantifying Memorization Across Neural Language Models</a></li>
+        <li><a href="#">Extracting Training Data from Large Language Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Membership Inference Attacks From First Principles</a></li>
+        <li><a href="#">Scalable Extraction of Training Data from (Production) Language Models</a></li>
+        <li><a href="#">Extracting Training Data from Diffusion Models</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+
+<h3>Legal, ethical, and security considerations</h3>
+
+<table>
+  <tr>
+    <td>Feb 23 (Fri)</td>
+    <td>
+      <strong>Copyright</strong><br>
+      <ul>
+        <li><a href="#">Talkin’ ‘Bout AI Generation: Copyright and the Generative-AI Supply Chain</a></li>
+        <li><a href="#">NYT-OpenAI lawsuit</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Foundation Models and Fair Use</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Feb 28 (Wed)</td>
+    <td>
+      <strong>Segregating data</strong><br>
+      <ul>
+        <li><a href="#">What Does it Mean for a Language Model to Preserve Privacy?</a></li>
+        <li><a href="#">SILO language models: Isolating legal risk in a nonparametric datastore</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mar 1 (Fri)</td>
+    <td>
+      <strong>Data security at training time</strong><br>
+      <ul>
+        <li><a href="#">Poisoning Web-Scale Training Datasets is Practical</a></li>
+        <li><a href="#">Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Poisoning Language Models During Instruction Tuning</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mar 6 (Wed)</td>
+    <td>
+      <strong>Data security at test time</strong><br>
+      <ul>
+        <li><a href="#">Universal and Transferable Adversarial Attacks on Aligned Language Models</a></li>
+        <li><a href="#">DECODINGTRUST: A Comprehensive Assessment of Trustworthiness in GPT Models</a></li>
+      </ul>
+      <u>Optional reading</u>
+      <ul>
+        <li><a href="#">Are aligned neural networks adversarially aligned?</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Mar 8 (Fri)</td>
+    <td>
+      Last class; project presentations      
+    </td>
+  </tr>
+  <tr>
+    <td>Mar 11 (Mon)</td>
+    <td>
+      No class; project writeups due
+    </td>
+  </tr>
+</table>
+
+<hr/>
+<h3>Acknowledgements</h3>
+We are grateful to Sewon Min, Rulin Shao, and Tatsunori Hashimoto for their feedback and assistance with this course. 
