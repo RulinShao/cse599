@@ -14,7 +14,7 @@ As a presenter, you should assume that your classmates have all read the assigne
 
 Concretely, your presentation should have two components:
 
-1. **Context.** Read a few papers that are prior and/or concurrent work, and a few papers that came later and build upon the ideas in this paper. Summarize the broader landscape (as described by these papers) and situate the assigned papers within these works. For example, your presentation might answer the following questions:
+1. **Context.** Read a few papers that are prior and/or concurrent work, and a few papers that came later and build upon the ideas in this paper. Share any background information that you think will help your classmates better understand the assigned readings. Summarize the broader landscape (as described by these papers) and situate the assigned papers within these works. For example, your presentation might answer the following questions:
   - What problem is the assigned paper tackling? What is the motivation?
   - What was the state-of-the-art before this paper? What was the prevailing view about this problem? 
   - What was the key contribution made by this paper? What was the insight that allowed them to make this contribution?

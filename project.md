@@ -39,7 +39,7 @@ Presentation (10% of total grade, due in class on March 8; slides due morning of
 
 Writeup (35% of total grade, due 11:59pm March 11)
 - 6-8 pages. This should be structured like a typical research paper. In particular, in addition to setup/methods/results, it should also contain an abstract and introduction; a description of related work; a discussion; and references. You may include an optional appendix. References and any appendices do not count towards the page limit.
-- Please follow the ICLR formatting guidelines and use the appropriate style files.
+- Please follow the ICLR formatting guidelines and use the appropriate [style files](https://github.com/ICLR/Master-Template/raw/master/iclr2023.zip).
 - You should also upload any code written for your project. Please upload it to Github etc. and include a link in the writeup. The repository should include all relevant code needed to reproduce the results. It should also come with a README file documenting what commands you ran.
 - At the end of your writeup, include a brief Contributions section that details who contributed what to the project. This is just to ensure everyone contributes meaningfully. Unless in exceptional circumstances, all members will share the same grade. This section does not count towards the page limit.
 
