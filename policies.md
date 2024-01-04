@@ -16,7 +16,7 @@ The focus of the class is on reading, discussing, and writing about research pap
 ### Paper reflections (17%)
 - We will cover 17 pairs of papers in class. For each pair, submit paper reflections through Gradescope by 11:59pm the day before class. 
 - The reflections for each pair of papers is worth 1% of the total grade and will be graded on a pass/fail basis.
-- Presenters still need to submit reflections for the papers they are presenting.
+- Presenters still need to submit reflections for thme papers they are presenting.
 
 ### Paper presentation (16%)
 - Students will pair up to be presenters for a class. Each class will have one pair of student presenters. During the quarter, every student is expected to present at least once.
@@ -29,7 +29,6 @@ The focus of the class is on reading, discussing, and writing about research pap
 - Project presentation (10%), in class on March 8
 - Writeup (35%), due 11:59pm March 11
 - Students are encouraged to form groups of up to 3 students. All members of the group will get the same grade, barring exceptional circumstances.
-- The project can be a detailed proposal (i.e., everything but the results section of a paper). Students who do a full project (with experimental/theoretical results) will receive up to 10% extra credit.
 
 
 ## Late submissions and accommodations 
