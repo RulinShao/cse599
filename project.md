@@ -31,11 +31,11 @@ Proposal (5% of total grade, due 11:59pm February 2)
 - Describe the proposed project as well as any preliminary results.
 - Submit as a typeset PDF on Gradescope. 
 
-Presentation (10% of total grade, due in class on March 8; slides due morning of March 8)
-- Students will give a 5 min presentation in class.
+Presentation (10% of total grade, due in class on March 8; add your slides to Google slides before class)
+- Students will give a 4 min presentation in class.
 - The goal of the presentation is to convey the important high-level ideas and takeaways of your project, rather than all the details.
 - All group members should participate in the presentation.
-- To minimize time spent switching computers, submit your slides on Gradescope as a PDF by the morning of March 8.
+- To minimize time spent switching computers, add your slides to the Google slides link in Ed before class.
 
 Writeup (35% of total grade, due 11:59pm March 11)
 - 6-8 pages. This should be structured like a typical research paper. In particular, in addition to setup/methods/results, it should also contain an abstract and introduction; a description of related work; a discussion; and references. You may include an optional appendix. References and any appendices do not count towards the page limit.
