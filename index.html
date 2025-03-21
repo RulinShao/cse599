@@ -31,10 +31,10 @@ nav_order: 1
   }
 </style>
 
-<h1>CSE599J: Data-centric Machine Learning</h1>
+<h1>CSE599H: Advances and Challenges in Language Models, Reasoning, and AI Agents</h1>
 <h3>
-Winter 2023-2024<br/>
-Wednesdays and Fridays, 3pm to 4:20pm<br/>
+Spring 2024-2025<br/>
+Mondays and Wednesdays, 3pm to 4:20pm<br/>
 CSE2 371<br/>
 <a href="https://www.gradescope.com/courses/691530">Gradescope</a>
 |
@@ -43,29 +43,40 @@ CSE2 371<br/>
 <br/>
 
 <div class="staffer">
-  <img class="staffer-image" src="{{site.url}}/images/pw.jpg" alt="">
+  <img class="staffer-image" src="{{site.url}}/images/hanna.jpg" alt="">
   <div>
     <h3 class="staffer-name">
-      <a href="https://koh.pw/">Pang Wei Koh</a>
+      <a href="https://homes.cs.washington.edu/~hannaneh/">Hanna Hajishirzi</a>
     </h3>
     <p class="staffer-meta">Instructor</p>
-    <p class="staffer-meta"><a href="mailto:pangwei@cs.washington.edu">pangwei@cs.washington.edu</a></p>
+    <p class="staffer-meta"><a href="mailto:hannaneh@cs.washington.edu">hannaneh@cs.washington.edu</a></p>
   </div>
 </div>
 
 <div class="staffer">
-  <img class="staffer-image" src="{{site.url}}/images/akari.jpg" alt="">
+  <img class="staffer-image" src="{{site.url}}/images/jiacheng.jpg" alt="">
   <div>
     <h3 class="staffer-name">
-      <a href="https://akariasai.github.io/">Akari Asai</a>
+      <a href="https://liujch1998.github.io/">Jiacheng Liu</a>
     </h3>
     <p class="staffer-meta">TA</p>
-    <p class="staffer-meta"><a href="akari@cs.washington.edu">akari@cs.washington.edu</a></p>
+    <p class="staffer-meta"><a href="liujc@cs.washington.edu">liujc@cs.washington.edu</a></p>
+  </div>
+</div>
+
+<div class="staffer">
+  <img class="staffer-image" src="{{site.url}}/images/rulin.jpg" alt="">
+  <div>
+    <h3 class="staffer-name">
+      <a href="https://rulinshao.github.io/">Rulin Shao</a>
+    </h3>
+    <p class="staffer-meta">TA</p>
+    <p class="staffer-meta"><a href="rulins@cs.washington.edu">rulins@cs.washington.edu</a></p>
   </div>
 </div>
 
 Office hours by appointment. <br/>
-To contact course staff, please make an Ed post or email both Pang Wei and Akari. <br/>
+To contact course staff, please make an Ed post. <br/>
 We welcome feedback on the course. If you prefer to leave it anonymously, use
 <a href="https://forms.gle/khU2mGjaaTDF7poa8">this form</a>.
 
@@ -73,7 +84,7 @@ We welcome feedback on the course. If you prefer to leave it anonymously, use
 <hr/>
 
 <p>
-  Many advances in machine learning over the past decade have been powered by the increasing availability of larger and more diverse datasets. Where do these datasets come from? What issues are present in these datasets, and how might we deal with them? We will study questions around how we can better use our available data for training, at inference, and for evaluation, as well as ethical, legal, and security issues around data use. The course will be primarily based around paper reading and discussions, with an open-ended course project.
+  Language models, such as GPT-o3, DeepSeek-R1, and Deep Research, have demonstrated remarkable capabilities in natural language understanding, generation, and reasoning, with applications ranging from literature summarization to complex problem-solving tasks. However, as we will discuss, these models are not without limitations, such as susceptibility to hallucinations, poor capabilities in strategic exploration, and limitations in long-horizon planning. In this class, we will explore the latest research on language models, reasoning, and AI agents, discussing both the advances and challenges in these areas. We will examine the current state-of-the-art models, their limitations, and the ongoing efforts to address these challenges. Through this course, you will engage in paper discussions and gain a deeper understanding of the latest developments in the field and contribute to the ongoing discussions and research in this exciting area.
 </p>
 <p>
   This is a seminar designed for PhD students. Students are expected to be able to read and understand the assigned papers on their own, and they should be familiar with ML and NLP concepts at the level of having taken advanced undergraduate classes.
@@ -84,30 +95,22 @@ We welcome feedback on the course. If you prefer to leave it anonymously, use
 Weekly due dates:
 <ul>
   <li>By Monday 11:59pm: Slides for Wednesday's papers (presenters only)</li>
-  <li>By Tuesday 11:59pm: Paper reflections for Wednesday's papers  (everyone)</li>
-  <li>By Wednesday 11:59pm: Slides for Friday's papers (presenters only)</li>
-  <li>By Thursday 11:59pm: Paper reflections for Friday's papers (everyone)</li>
+  <li>By Saturday 11:59pm: Slides for Monday's papers (presenters only)</li>
 </ul>
 
 
 
-<h3>1. Data for pretraining</h3>
+<h3>1. Course Overview</h3>
 
 
 <table>
   <tr>
-    <td>Jan 3 (Wed)</td>
+    <td>Mar 31 (Mon)</td>
     <td>
-      <strong>No class</strong>
-    </td>
-  </tr>
-  <tr>
-    <td>Jan 5 (Fri)</td>
-    <td>
-      <strong>Course overview & dataset construction
-        <a href="{{site.url}}/slides/CSE599J_1-5-24.pdf">(slides)</a>
+      <strong>Course overview
+        <!-- <a href="{{site.url}}/slides/CSE599J_1-5-24.pdf">(slides)</a> -->
       </strong><br>
-      <ul>
+      <!-- <ul>
         <li><a href="https://arxiv.org/abs/2104.08758">Documenting Large Webtext Corpora: A Case Study on the Colossal Clean Crawled Corpus</a></li>
         <li><a href="https://arxiv.org/abs/2304.14108">DataComp: In search of the next generation of multimodal datasets</a></li>
       </ul>
@@ -116,336 +119,65 @@ Weekly due dates:
         <li><a href="https://arxiv.org/abs/1910.10683">Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</a></li>
         <li><a href="https://arxiv.org/abs/2210.08402">LAION-5B: An open large-scale dataset for training next generation image-text models</a></li>
         <li><a href="https://arxiv.org/abs/2309.16671">Demystifying CLIP Data</a></li>
-      </ul>
+      </ul> -->
     </td>
   </tr>
   <tr>
-    <td>Jan 10 (Wed)</td>
-    <td>
-      <strong>Scaling laws
-        <a href="{{site.url}}/slides/CSE599J_1-10-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2203.15556">Training Compute-Optimal Large Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2305.16264">Scaling Data-Constrained Language Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2001.08361">Scaling Laws for Neural Language Models</a></li>
-      </ul>
-    </td>
+    <td>Apr 2 (Wed)</td>
   </tr>
   <tr>
-    <td>Jan 12 (Fri)</td>
-    <td>
-      <strong>Data filtering
-        <a href="{{site.url}}/slides/CSE599J_1-12-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2107.06499">Deduplicating Training Data Makes Language Models Better</a></li>
-        <li><a href="https://arxiv.org/abs/2201.10474">Whose Language Counts as High Quality? Measuring Language Ideologies in Text Data Selection</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2303.09540">SemDeDup: Data-efficient learning at web-scale through semantic deduplication</a></li>
-        <li><a href="https://arxiv.org/abs/2206.14486">Beyond neural scaling laws: beating power law scaling via data pruning</a></li>
-        <li><a href="https://arxiv.org/abs/2309.17425">Data Filtering Networks</a></li>
-        <li><a href="https://arxiv.org/abs/2103.14749">Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks</a></li>
-        <li><a href="https://arxiv.org/abs/1911.00068">Confident Learning: Estimating Uncertainty in Dataset Labels</a></li>
-      </ul>
-    </td>
+    <td>Apr 7 (Mon)</td>
   </tr>
   <tr>
-    <td>Jan 17 (Wed)</td>
-    <td>
-      <strong>Dataset composition
-        <a href="{{site.url}}/slides/CSE599J_1-17-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2305.13169">A Pretrainer's Guide to Training Data: Measuring the Effects of Data Age, Domain Coverage, Quality, & Toxicity</a></li>
-        <li><a href="https://arxiv.org/abs/2312.04567">Scaling Laws of Synthetic Images for Model Training ... for Now</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2207.07635">Is a Caption Worth a Thousand Images? A Controlled Study for Representation Learning</a></li>
-        <li><a href="https://arxiv.org/abs/2208.05516">Quality Not Quantity: On the Interaction between Dataset Design and Robustness of CLIP</a></li>
-        <li><a href="https://arxiv.org/abs/2205.01397">Data Determines Distributional Robustness in Contrastive Language-Image Pre-training (CLIP)</a></li>
-        <li><a href="https://arxiv.org/abs/2307.10350">Improving Multimodal Datasets with Image Captioning</a></li>
-        <li><a href="https://arxiv.org/abs/2306.00984">StableRep: Synthetic Images from Text-to-Image Models Make Strong Visual Representation Learners</a></li>
-      </ul>
-    </td>
+    <td>Apr 9 (Wed)</td>
   </tr>
   <tr>
-    <td>Jan 19 (Fri)</td>
-    <td>
-      <strong>Biases in datasets
-        <a href="{{site.url}}/slides/CSE599J_1-19-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2305.08283">From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models</a></li>
-        <li><a href="https://arxiv.org/abs/2306.16388">Towards Measuring the Representation of Subjective Global Opinions in Language Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2303.17548">Whose Opinions Do Language Models Reflect?</a></li>
-        <li><a href="https://arxiv.org/abs/2305.13788">Can Large Language Models Capture Dissenting Human Voices?</a></li>
-        <li><a href="https://arxiv.org/abs/2211.02570">The "Problem" of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-
-<h3>2. Data for tuning and evaluation</h3>
-
-<table>
-  <tr>
-    <td>Jan 24 (Wed)</td>
-    <td>
-      <strong>Generative evaluation
-        <a href="{{site.url}}/slides/CSE599J_1-24-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2306.05685">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</a></li>
-        <li><a href="https://arxiv.org/abs/2107.00061">All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated Text</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2311.18232">LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2212.02774">Adaptive Testing of Computer Vision Models</a></li>
-      </ul>
-    </td>
+    <td>Apr 14 (Mon)</td>
   </tr>
   <tr>
-    <td>Jan 26 (Fri)</td>
-    <td>
-      <strong>Data for alignment
-        <a href="{{site.url}}/slides/CSE599J_1-26-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2305.11206">LIMA: Less Is More for Alignment</a></li>
-        <li><a href="https://arxiv.org/abs/2305.15717">The False Promise of Imitating Proprietary LLMs</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2309.00267">RLAIF: Scaling Reinforcement Learning from Human Feedback with AI Feedback</a></li>
-        <li><a href="https://arxiv.org/abs/2212.10560">Self-Instruct: Aligning Language Models with Self-Generated Instructions</a></li>
-        <li><a href="https://arxiv.org/abs/2312.01552">The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning</a></li>
-        <li><a href="https://arxiv.org/abs/2301.13688">The Flan Collection: Designing Data and Methods for Effective Instruction Tuning</a></li>
-        <li><a href="https://arxiv.org/abs/2306.04751">How Far Can Camels Go? Exploring the State of Instruction Tuning on Open Resources</a></li>
-      </ul>
-    </td>
+    <td>Apr 16 (Wed)</td>
   </tr>
   <tr>
-    <td>Jan 31 (Wed)</td>
-    <td>
-      <strong>Ambiguity and disagreement
-        <a href="{{site.url}}/slides/CSE599J_1_31-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2304.14399">We're Afraid Language Models Aren't Modeling Ambiguity</a></li>
-        <li><a href="https://arxiv.org/abs/2202.02950">Jury Learning: Integrating Dissenting Voices into Machine Learning Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2004.10645">AmbigQA: Answering Ambiguous Open-domain Questions</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-<h3>3. Adapting to different data distributions</h3>
-
-<table>
-  <tr>
-    <td>Feb 2 (Fri)</td>
-    <td>
-      <strong>Distribution shifts (project proposal due)
-        <a href="{{site.url}}/slides/CSE599J_2_2-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2012.07421">WILDS: A benchmark of in-the-wild distribution shifts</a></li>
-        <li><a href="https://www.alexkulesza.com/pubs/adapt_mlj10.pdf">A theory of learning from different domains</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2112.05090">Extending the WILDS benchmark for unsupervised adaptation</a></li>
-        <li><a href="https://arxiv.org/abs/2107.04649">Accuracy on the Line: On the Strong Correlation Between Out-of-Distribution and In-Distribution Generalization</a></li>
-        <li><a href="https://arxiv.org/abs/2302.11861">Out-of-Domain Robustness via Targeted Augmentations</a></li>
-      </ul>
-    </td>
+    <td>Apr 21 (Mon)</td>
   </tr>
   <tr>
-    <td>Feb 7 (Wed)</td>
-    <td>
-      <strong>Reweighting data
-        <a href="{{site.url}}/slides/CSE599J_2_7-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://www.researchgate.net/publication/230710850_Improving_predictive_inference_under_covariate_shift_by_weighting_the_log-likelihood_function">Improving predictive inference under covariate shift by weighting the log-likelihood function</a></li>
-        <li><a href="https://arxiv.org/abs/1909.02060">Distributionally Robust Language Modeling</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/1911.08731">Distributionally robust neural networks for group shifts</a></li>
-        <li><a href="https://arxiv.org/abs/2305.10429">DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining</a></li>
-        <li><a href="https://arxiv.org/abs/2302.03169">Data Selection for Language Models via Importance Resampling</a></li>
-      </ul>
-    </td>
+    <td>Apr 23 (Wed)</td>
   </tr>
   <tr>
-    <td>Feb 9 (Fri)</td>
-    <td>
-      <strong>Domain adaptation
-        <a href="{{site.url}}/slides/CSE599J_2_9-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2004.10964">Don't Stop Pretraining: Adapt Language Models to Domains and Tasks</a></li>
-        <li><a href="https://arxiv.org/abs/2311.16079">MEDITRON-70B: Scaling Medical Pretraining for Large Language Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2211.09085">Galactica: A Large Language Model for Science</a></li>
-        <li><a href="https://arxiv.org/abs/2311.07361">The Impact of Large Language Models on Scientific Discovery: a Preliminary Study using GPT-4</a></li>
-        <li><a href="https://arxiv.org/abs/2310.10631">Llemma: An Open Language Model for Mathematics</a></li>
-        <li><a href="https://arxiv.org/abs/2310.06786">OpenWebMath: An Open Dataset of High-Quality Mathematical Web Text</a></li>
-        <li><a href="https://arxiv.org/abs/2206.14858">Solving Quantitative Reasoning Problems with Language Models</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-<h3>4. Linking model output to training data</h3>
-
-<table>
-  <tr>
-    <td>Feb 14 (Wed)</td>
-    <td>
-      <strong>Data attribution
-        <a href="{{site.url}}/slides/CSE599J_2_14-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2308.03296">Studying Large Language Model Generalization with Influence Functions</a></li>
-        <li><a href="https://arxiv.org/abs/2303.08114">Simfluence: Modeling the Influence of Individual Training Examples by Simulating Training Runs</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/1703.04730">Understanding Black-box Predictions via Influence Functions</a></li>
-        <li><a href="https://arxiv.org/abs/2303.14186">TRAK: Attributing Model Behavior at Scale</a></li>
-      </ul>
-    </td>
+    <td>Apr 28 (Mon)</td>
   </tr>
   <tr>
-    <td>Feb 16 (Fri)</td>
-    <td>
-      <strong>Retrieval-based models
-        <a href="{{site.url}}/slides/CSE599J_2_16-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2212.10511">When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories</a></li>
-        <li><a href="https://arxiv.org/abs/2208.03299">Atlas: Few-shot Learning with Retrieval Augmented Language Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2211.08411">Large Language Models Struggle to Learn Long-Tail Knowledge</a></li>
-        <li><a href="https://arxiv.org/abs/2112.09924">The Web Is Your Oyster - Knowledge-Intensive NLP against a Very Large Web Corpus</a></li>
-        <li><a href="https://arxiv.org/abs/2112.04426">Improving language models by retrieving from trillions of tokens</a></li>
-        <li><a href="https://arxiv.org/abs/2302.00083">In-Context Retrieval-Augmented Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/1911.00172">Generalization through Memorization: Nearest Neighbor Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a></li>
-        <li><a href="https://arxiv.org/abs/2211.12561">Retrieval-Augmented Multimodal Language Modeling</a></li>
-        <li><a href="https://arxiv.org/abs/2207.05987">DocPrompting: Generating Code by Retrieving the Docs</a></li>
-        <li><a href="https://arxiv.org/abs/2312.06648">Dense X Retrieval: What Retrieval Granularity Should We Use?</a></li>
-        <li><a href="https://arxiv.org/abs/2310.10638">In-Context Pretraining: Language Modeling Beyond Document Boundaries</a></li>
-      </ul>
-    </td>
+    <td>Apr 30 (Wed)</td>
   </tr>
   <tr>
-    <td>Feb 21 (Wed)</td>
-    <td>
-      <strong>Memorization
-        <a href="{{site.url}}/slides/CSE599J_2_21-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2202.07646">Quantifying Memorization Across Neural Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2012.07805">Extracting Training Data from Large Language Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2112.03570">Membership Inference Attacks From First Principles</a></li>
-        <li><a href="https://arxiv.org/abs/2311.17035">Scalable Extraction of Training Data from (Production) Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2301.13188">Extracting Training Data from Diffusion Models</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-
-<h3>5. Legal, ethical, and security considerations</h3>
-
-<table>
-  <tr>
-    <td>Feb 23 (Fri)</td>
-    <td>
-      <strong>No class</strong>
-    </td>
+    <td>May 5 (Mon)</td>
   </tr>
   <tr>
-    <td>Feb 28 (Wed)</td>
-    <td>
-      <strong>Copyright
-        <a href="{{site.url}}/slides/CSE599J_2_28-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4523551">Talkin' 'Bout AI Generation: Copyright and the Generative-AI Supply Chain</a></li>
-        <li><a href="https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf">NYT-OpenAI lawsuit</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2303.15715">Foundation Models and Fair Use</a></li>
-        <li><a href="https://arxiv.org/abs/2302.04222">Glaze: Protecting Artists from Style Mimicry by Text-to-Image Models</a></li>
-      </ul>
-    </td>
+    <td>May 7 (Wed)</td>
   </tr>
   <tr>
-    <td>Mar 1 (Fri)</td>
-    <td>
-      <strong>Segregating data
-        <a href="{{site.url}}/slides/CSE599J_3_1-24.pdf">(slides)</a>
-      </strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2202.05520">What Does it Mean for a Language Model to Preserve Privacy?</a></li>
-        <li><a href="https://arxiv.org/abs/2308.04430">SILO language models: Isolating legal risk in a nonparametric datastore</a></li>
-      </ul>
-    </td>
+    <td>May 12 (Mon)</td>
   </tr>
   <tr>
-    <td>Mar 6 (Wed)</td>
-    <td>
-      <strong>Data security and robustness</strong><br>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2302.10149">Poisoning Web-Scale Training Datasets is Practical</a></li>
-        <li><a href="https://arxiv.org/abs/2306.11698">DECODINGTRUST: A Comprehensive Assessment of Trustworthiness in GPT Models</a></li>
-      </ul>
-      <u>Optional reading</u>
-      <ul>
-        <li><a href="https://arxiv.org/abs/2305.00944">Poisoning Language Models During Instruction Tuning</a></li>
-        <li><a href="https://arxiv.org/abs/2307.15043">Universal and Transferable Adversarial Attacks on Aligned Language Models</a></li>
-        <li><a href="https://arxiv.org/abs/2306.15447">Are aligned neural networks adversarially aligned?</a></li>
-      </ul>
-    </td>
+    <td>May 14 (Wed)</td>
   </tr>
   <tr>
-    <td>Mar 8 (Fri)</td>
-    <td>
-      Last class; project presentations
-    </td>
+    <td>May 19 (Mon)</td>
   </tr>
   <tr>
-    <td>Mar 11 (Mon)</td>
-    <td>
-      No class; project writeups due
-    </td>
+    <td>May 21 (Wed)</td>
+  </tr>
+  <tr>
+    <td>May 26 (Mon)</td>
+  </tr>
+  <tr>
+    <td>May 28 (Wed)</td>
+  </tr>
+  <tr>
+    <td>Jun 2 (Mon)</td>
+  </tr>
+  <tr>
+    <td>Jun 4 (Wed)</td>
   </tr>
 </table>
 
