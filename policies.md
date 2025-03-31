@@ -35,6 +35,5 @@ The 4-page limit is a hard constraint and will be enforced seriously. References
 
 ## Late submissions and accommodations
 
-- There is no free late days for submitting the paper review and research proposal.
-- Any late submission will be penalized at a penalty of 10% of the maximum grade per day.
+- You have 3 late days in total for submitting the paper review and research proposal.
 - If you have DRS accommodations that the course staff should know about, please contact us at the beginning of the course.
