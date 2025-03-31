@@ -12,7 +12,7 @@ The focus of the class is on reading, discussing, and writing about research pap
 
 ### Lead one class discussion (35%)
 - Students will form groups of 3 to be presenters for a class. Each class will have one group of student presenters. During the quarter, every student is expected to present once.
-- Please sign up your group and present date on this spreadsheet by 11:59pm on April 4. The present dates are first-come-first-serve.
+- Please sign up your group and present date on [this spreadsheet](https://docs.google.com/spreadsheets/d/1STEe-VNGyEfbrLRfH5X-6mwrvSPo1hhlMblRCwbXk3o/edit?usp=sharing) by 11:59pm on April 4. The present dates are first-come-first-serve.
 - Presenters should post their slides on Ed by 11:59pm two days before class.
 - All students in a group will get the same grade, barring exceptional circumstances.
 
