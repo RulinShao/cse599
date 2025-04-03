@@ -20,9 +20,13 @@ The focus of the class is on reading, discussing, and writing about research pap
 - All students are expected to ask questions and participate in paper discussions in person. Please email the course staff if you are unable to attend class in person.
 
 ### Paper review (15%)
-- We will provide the list of papers for the paper review. Check here for instructions for paper review. The paper review should not be longer than 2 pages. Submit the paper review via GradeScope. Also, to see some more samples for paper reviews you can check the open review website https://openreview.net. For example, these are sample reviews from the most recent ICLR conference: https://openreview.net/group?id=ICLR.cc/2025/Conference
+**Due 11:59pm on Friday, May 2**
+
+We will provide the list of papers for the paper review. Check here for instructions for paper review. The paper review should not be longer than 2 pages. Submit the paper review via GradeScope. Also, to see some more samples for paper reviews you can check the open review website https://openreview.net. For example, these are sample reviews from the most recent ICLR conference: https://openreview.net/group?id=ICLR.cc/2025/Conference
 
 ### Research proposal (25%)
+**Due 11:59pm on Tuesday, June 3**
+
 Write a 4-page research proposal paper describing a line of research in NLP. The research proposal should be about a new project that would extend a clearly identified past research contribution. The research proposal should:
 - Build upon or extend what was done in the past work;
 - Address challenges or weaknesses in the past research;
