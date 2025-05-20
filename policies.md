@@ -33,11 +33,16 @@ Write a 4-page research proposal paper describing a line of research in NLP. The
 - Propose logical extensions or next steps to the focus research; and
 - Describe a possible evaluation methodology, experimental design, and required evaluation resources.
 
-You can find some guidelines in the link, or schedule a meeting with the instructor or the TA to learn more.
+You can find some guidelines in the links below, or schedule a meeting with the instructor or the TA to learn more.
+- <https://students.ucsd.edu/_files/aep/research-proposal-guidelines-13.pdf>
+- <http://pages.cs.wisc.edu/~markhill/grant-tips.html>
+- <https://blog.regehr.org/archives/149>
+
+Your goal in this proposal is not to summarize the background work. We want you to build creatively on what you’ve read and propose something new. You should cite relevant work, but you don’t need to explain it in detail.
 
 The 4-page limit is a hard constraint and will be enforced seriously. References don't count toward the page limit. Please use the ACL 2025 style files without modification.
 
 ## Late submissions and accommodations
 
-- You have 3 late days in total for submitting the paper review and research proposal.
+- You have 4 late days in total for submitting the paper review and research proposal.
 - If you have DRS accommodations that the course staff should know about, please contact us at the beginning of the course.
